@@ -6,12 +6,11 @@
     <Version>1.0.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>基于LumiSoft.Net源代码重新编译发布；
-</Description>
-    <PackageReleaseNotes>基于LumiSoft.Net源代码重新编译发布（有少许改动）；
-使用协议完全遵从LumiSoft.Net，请放心使用；</PackageReleaseNotes>
-    <Authors>LumiSoft.Net</Authors>
-    <Company>LumiSoft.Net</Company>
+    <Description>      Fork of New.Lumisoft.Net by rob@rnwood.co.uk
+    </Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Authors>LumiSoft.Net and rob@rnwood.co.uk</Authors>
+    <Company>LumiSoft.Net and rob@rnwood.co.uk</Company>
 
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -19,6 +18,16 @@
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
 
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageLicenseFile>ReadMe.md</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\ReadMe.md" Pack="true"
+
+PackagePath="ReadMe.md"/>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="ABNF\ABFN.cs" />

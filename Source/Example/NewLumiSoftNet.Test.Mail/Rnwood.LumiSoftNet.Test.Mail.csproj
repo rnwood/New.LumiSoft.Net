@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\New.LumiSoft.Net\New.LumiSoft.Net.csproj" />
+    <ProjectReference Include="..\..\New.LumiSoft.Net\Rnwood.LumiSoft.Net.csproj" />
   </ItemGroup>
 
 </Project>
