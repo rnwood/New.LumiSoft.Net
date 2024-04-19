@@ -596,6 +596,7 @@ namespace LumiSoft.Net.TCP
                         else if (bind.IP.AddressFamily == AddressFamily.InterNetworkV6)
                         {
                             socket = new Socket(AddressFamily.InterNetworkV6, SocketType.Stream, ProtocolType.Tcp);
+                            socket.DualMode = true;
                         }
                         else
                         {
