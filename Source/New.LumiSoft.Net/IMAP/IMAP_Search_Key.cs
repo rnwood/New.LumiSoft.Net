@@ -171,8 +171,14 @@ namespace LumiSoft.Net.IMAP
             // UNSEEN
             else if(r.StartsWith("UNSEEN",false)){
                 return IMAP_Search_Key_Unseen.Parse(r);
-            }
-            else{
+			}            
+            // ALL
+			else if (r.StartsWith("ALL", false))
+			{
+				return IMAP_Search_Key_All.Parse(r);
+			}
+			else
+			{
                 // Check if we hae sequence-set. Because of IMAP specification sucks a little here, why the hell they didn't 
                 // do the keyword(SEQSET) for it, like UID. Now we just have to try if it is sequence-set or BAD key. 
                 try{

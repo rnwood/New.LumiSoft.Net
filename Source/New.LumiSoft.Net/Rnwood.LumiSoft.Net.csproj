@@ -3,10 +3,10 @@
   <PropertyGroup>
     <!--<TargetFramework>netstandard2.0</TargetFramework>-->
     <TargetFrameworks>net45;net46;netstandard2.0;</TargetFrameworks>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>      Fork of New.Lumisoft.Net by rob@rnwood.co.uk
+    <Description>Fork of New.Lumisoft.Net by rob@rnwood.co.uk. Use for IMAP server in Smtp4dev.
     </Description>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Authors>LumiSoft.Net and rob@rnwood.co.uk</Authors>
@@ -24,9 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\ReadMe.md" Pack="true"
-
-PackagePath="ReadMe.md"/>
+    <None Include="..\..\ReadMe.md" Pack="true" PackagePath="ReadMe.md" />
   </ItemGroup>
 
   <ItemGroup>
